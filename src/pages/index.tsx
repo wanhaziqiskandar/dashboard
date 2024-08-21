@@ -2,9 +2,10 @@ import Image from "next/image";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from '@/styles/Home.module.css';
-import Dashboard from "./dashboard";
-import Header from "./components/Header/Header";
-import SideMenu from "./components/SideMenu/SideMenu";
+import Header from "@/components/Header";
+import SideMenu from "@/components/SideMenu";
+import Dashboard from "./dashboard/Dashboard";
+import Login from "@/components/Login";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +24,7 @@ export default function Home() {
         <Header/>
         <SideMenu/>
         <Dashboard/>
+        <Login/>
       </main>
     </>
   );
